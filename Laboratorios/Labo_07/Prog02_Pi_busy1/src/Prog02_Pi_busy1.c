@@ -1,10 +1,10 @@
 /*
  ============================================================================
  Name        : Prog02_Pi_busy1.c
- Author      : mirano
+ Author      : Christian
  Version     :
  Copyright   : Your copyright notice
- Description : Hello OpenMP World in C
+ Description : PI
  ============================================================================
  */
 
@@ -14,7 +14,7 @@
 #include <pthread.h>
 #include "timer.h"
 
-const int MAX_THREADS = 1024;
+const int MAX_THREADS = 64;
 
 long thread_count;
 long long n;
@@ -88,8 +88,7 @@ void* Thread_sum(void *rank) {
 		factor = -1.0;
 
 	for (i = my_first_i; i < my_last_i; i++, factor = -factor) {
-		while (flag != my_rank)
-			;
+		while (flag != my_rank);
 		sum += factor / (2 * i + 1);
 		flag = (flag + 1) % thread_count;
 	}

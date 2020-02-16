@@ -1,10 +1,10 @@
 /*
  ============================================================================
  Name        : Pro01_MultiMatrVector.c
- Author      : mirano
+ Author      : Christian
  Version     :
  Copyright   : Your copyright notice
- Description : Hello OpenMP World in C
+ Description : Producto Matriz-Vector
  ============================================================================
  */
 
@@ -39,7 +39,6 @@ int main(int argc, char *argv[]) {
 		Usage(argv[0]);
 
 	thread_count = atoi(argv[1]);
-	printf("%d",thread_count);
 	thread_handles = malloc(thread_count * sizeof(pthread_t));
 
 	printf("Enter m and n\n");

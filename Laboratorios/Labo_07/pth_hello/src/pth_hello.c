@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : pth_hello.c
- Author      : mirano
+ Author      : Christian
  Version     :
  Copyright   : Your copyright notice
  Description : Hello OpenMP World in C

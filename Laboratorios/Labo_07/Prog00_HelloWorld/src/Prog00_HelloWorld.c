@@ -1,13 +1,12 @@
 /*
  ============================================================================
- Name        : Prog00-HelloWorld.c
- Author      : mirano
+ Name        : Prog00_HelloWorld.c
+ Author      : Christian
  Version     :
  Copyright   : Your copyright notice
  Description : Hello OpenMP World in C
  ============================================================================
  */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -50,4 +49,3 @@ void* Hello(void *rank) {
 	return NULL;
 
 }/* Hello */
-
